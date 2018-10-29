@@ -1,0 +1,160 @@
+{
+    "tests": [
+        {
+            "traceback": "Exception: Action '<aimacode.planning.Action object at 0x7f775fec3940>' pre-conditions not satisfied\n",
+            "rubric_item_id": "5516",
+            "description": "AirCargoProblem yields a correct solution when input to breadth_first_search",
+            "result": "E"
+        },
+        {
+            "traceback": "AssertionError: 18 != 12 : Incorrect number of fluents.\n",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p1 returns the correct initial fluents",
+            "result": "F"
+        },
+        {
+            "traceback": "AssertionError: Incorrect actions.\n\nSome of the actions your code generated were logically valid, but they contain one or more logically redundant clauses in their preconditions or effects.  Review the schema given in the project README and carefully consider which clauses are required.\nLogically redundant actions:\n    Load(C2, P2, JFK)\n    Fly(P1, SFO, JFK)\n    Load(C1, P1, SFO)\n    Fly(P2, JFK, SFO)\n",
+            "rubric_item_id": "5516",
+            "description": "AirCargoProblem correctly lists possible actions in a given state",
+            "result": "F"
+        },
+        {
+            "traceback": "AssertionError: Incorrect actions.\n\nSome of the actions your code generated were logically valid, but they contain one or more logically redundant clauses in their preconditions or effects.  Review the schema given in the project README and carefully consider which clauses are required.\nLogically redundant actions:\n    Unload(C1, P1, JFK)\n    Fly(P1, SFO, JFK)\n    Fly(P2, JFK, SFO)\n    Load(C1, P2, SFO)\n    Load(C2, P1, SFO)\n    Load(C2, P1, JFK)\n    Load(C2, P2, JFK)\n    Fly(P1, JFK, SFO)\n    Fly(P2, SFO, JFK)\n    Unload(C1, P2, SFO)\n    Unload(C1, P2, JFK)\n    Load(C2, P2, SFO)\n    Load(C1, P1, SFO)\n    Load(C1, P1, JFK)\n    Unload(C2, P1, JFK)\n    Unload(C2, P1, SFO)\n    Unload(C2, P2, JFK)\n    Load(C1, P2, JFK)\n    Unload(C2, P2, SFO)\n    Unload(C1, P1, SFO)\n",
+            "rubric_item_id": "5516",
+            "description": "AirCargoProblem correctly constructs all possible actions",
+            "result": "F"
+        },
+        {
+            "traceback": "AssertionError: Lists differ: ['Airport(JFK)', 'Airport(SFO)', 'At(C2, JFK[94 chars]P2)'] != ['At(C2, JFK)', 'At(P1, SFO)', 'At(P2, JFK)', 'In(C1, P1)']\n\nFirst differing element 0:\n'Airport(JFK)'\n'At(C2, JFK)'\n\nFirst list contains 6 additional elements.\nFirst extra element 4:\n'At(P2, JFK)'\n\n+ ['At(C2, JFK)', 'At(P1, SFO)', 'At(P2, JFK)', 'In(C1, P1)']\n- ['Airport(JFK)',\n-  'Airport(SFO)',\n-  'At(C2, JFK)',\n-  'At(P1, SFO)',\n-  'At(P2, JFK)',\n-  'Cargo(C1)',\n-  'Cargo(C2)',\n-  'In(C1, P1)',\n-  'Plane(P1)',\n-  'Plane(P2)'] : Your result function did not produce the expected output. The list of positive fluents was incorrect.\n",
+            "rubric_item_id": "5516",
+            "description": "AirCargoProblem correctly updates state for a given action",
+            "result": "F"
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p1 returns the correct goal fluents",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p1 returns an object of type problem",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p1 returns the correct initial values",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p2 returns the correct initial fluents",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p2 returns the correct goal fluents",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p2 returns an object of type problem",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p2 returns the correct initial values",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p3 returns the correct initial fluents",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p3 returns the correct goal fluents",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p3 returns an object of type problem",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5516",
+            "description": "air_cargo_p3 returns the correct initial values",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "AirCargoProblem implements the ignore preconditions heuristic",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "Action levels have the correct number of actions",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "Literal levels have the correct number of literals",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "competing_needs_mutex behaves correctly",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "inconsistent_effects_mutex behaves correctly",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "inconsistent_support_mutex behaves correctly",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "interference_mutex behaves correctly",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "negation_mutex behaves correctly",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "Serialization of mutexes is correct",
+            "result": "."
+        },
+        {
+            "traceback": "",
+            "rubric_item_id": "5519",
+            "description": "levelsum heuristic behaves correctly",
+            "result": "."
+        }
+    ]
+}
